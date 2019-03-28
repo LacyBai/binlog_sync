@@ -1,0 +1,33 @@
+SMYSQL_SETTINGS:
+    host: 127.0.0.1
+    port: 3306
+    user: tool
+    passwd: tool
+
+DMYSQL_SETTINGS:
+    host: 172.16.17.11
+    port: 3306
+    user: tool
+    passwd: tool
+
+REDIS_SETTINGS:
+    host: 127.0.0.1
+    port: 6379
+    db: 0
+    password: 
+    encoding: utf-8
+
+ONLY_CNF:
+    only_schemas: hhz,dota
+    only_tables: t,hero
+    target_schemas: {
+                     'hhz': 'hhz_new',
+                     'dota':'dota_new'
+                    }
+
+IGNORED_CNF:
+    ignored_schemas: 
+    ignored_tables: 
+
+CHANEL:
+    redis_chanel: binlog
